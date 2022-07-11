@@ -18,4 +18,4 @@ RUN dotnet publish -c release -o published --no-cache
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
 COPY --from=build /build/published ./
-ENTRYPOINT ["dotnet", "react-dotnet-example.dll"]
+ENTRYPOINT ["dotnet", "todo_list_with_mssql.dll"]
