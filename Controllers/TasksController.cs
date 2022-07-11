@@ -7,32 +7,32 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace react_dotnet_example.Controllers
+namespace todo_list_with_mssql.Controllers
 {
     [ApiController]
-    public class UsersController : ControllerBase
+    public class TasksController : ControllerBase
     {
 
-        private readonly ILogger<UsersController> _logger;
+        private readonly ILogger<TasksController> _logger;
 
-        static readonly Models.IUserRepository repository = new Models.UserRepository();
+        static readonly Models.ITaskRepository repository = new Models.TaskRepository();
 
-        public UsersController(ILogger<UsersController> logger)
+        public TasksController(ILogger<TasksController> logger)
         {
             _logger = logger;
         }
 
         [HttpGet]
-        [Route("api/users")]
-        public IEnumerable<Models.UserModel> GetAllUsers()
+        [Route("api/tasks")]
+        public IEnumerable<Models.TaskModel> GetAllTasks()
         {
             return repository.GetAll();
         }
 
         [HttpPost]
-        [Route("api/user")]
+        [Route("api/task")]
         [Consumes("application/json")]
-        public Models.UserModel PostUser(Models.UserModel item)
+        public Models.TaskModel PostUser(Models.TaskModel item)
         {
             return repository.Add(item);
         }

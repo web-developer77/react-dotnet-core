@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace react_dotnet_example
+namespace todo_list_with_mssql
 {
     public class Startup
     {

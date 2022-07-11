@@ -28,3 +28,7 @@ code {
   font-size: 75px;
   text-align: center;
 }
+
+.button-layout {
+  margin-right: 1rem;
+}

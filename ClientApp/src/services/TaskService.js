@@ -1,11 +1,11 @@
-export async function getAllUsers() {
+export async function getAllTasks() {
 
-    const response = await fetch('/api/users');
+    const response = await fetch('/api/tasks');
     return await response.json();
 }
 
-export async function createUser(data) {
-    const response = await fetch(`/api/user`, {
+export async function createTask(data) {
+    const response = await fetch(`/api/task`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)

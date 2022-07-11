@@ -13,7 +13,7 @@ export const Header = () => {
 
     return(
         <div style={headerStyle}>
-            <h1>React With .NET</h1>
+            <h1>TODO LISTS SPA with MSSQL</h1>
         </div>
     )
 }

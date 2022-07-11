@@ -1,6 +1,6 @@
 {
-  "short_name": "react_dotnet_example",
-  "name": "react_dotnet_example",
+  "short_name": "todo_list_with_mssql",
+  "name": "todo_list_with_mssql",
   "icons": [
     {
       "src": "favicon.ico",
